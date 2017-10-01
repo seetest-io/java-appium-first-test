@@ -22,7 +22,7 @@ public class AndroidSampleTest {
         //install the app on the device
         dc.setCapability(MobileCapabilityType.APP, "cloud:<BUNDLE_ID>");
         //get an iOS device
-        dc.setCapability("deviceQuery", "@os='android'");
+        dc.setCapability("platformName", "Android");
         //launch the app
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "<BUNDLE_ID>");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "<ACTIVITY>");

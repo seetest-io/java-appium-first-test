@@ -22,7 +22,7 @@ public class iOSSampleTest{
         //install the app on the device
         dc.setCapability(MobileCapabilityType.APP, "cloud:<BUNDLE_ID>");
         //get an iOS device
-        dc.setCapability("deviceQuery", "@os='ios'");
+        dc.setCapability("platformName", "iOS");
         //launch the app
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "<BUNDLE_ID>");
         driver = new IOSDriver(new URL("https://cloud.experitest.com:443/wd/hub"), dc);
