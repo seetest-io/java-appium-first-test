@@ -14,7 +14,7 @@ import java.net.URL;
 
 public class iOSSampleTest{
 
-    protected IOSDriver driver = null;
+    IOSDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     String userName = "<YOUR_USER_NAME>";
     String accessKey = "<ACCESS_KEY>";

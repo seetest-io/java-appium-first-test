@@ -11,7 +11,7 @@ import java.net.URL;
 
 public class AndroidSampleTest {
 
-    protected AndroidDriver driver = null;
+    AndroidDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     String userName = "<YOUR_USER_NAME>";
     String accessKey = "<ACCESS_KEY>";
