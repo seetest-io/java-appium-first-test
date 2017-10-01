@@ -12,13 +12,13 @@ public class AndroidSampleTest {
 
     AndroidDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
-    String userName = "<YOUR_USER_NAME>";
     String accessKey = "<ACCESS_KEY>";
+    String projectName = "<PROJECT_NAME>";
 
     @Before
     public void setUp() throws MalformedURLException {
-        dc.setCapability("username", userName);
         dc.setCapability("accessKey", accessKey);
+        dc.setCapability("projectName", projectName);
         //install the app on the device
         dc.setCapability(MobileCapabilityType.APP, "cloud:<BUNDLE_ID>");
         //get an iOS device

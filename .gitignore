@@ -5,3 +5,4 @@
 .gitignore
 src/main/resources/
 src/test/resources/
+/src/test/java/testMe.java
