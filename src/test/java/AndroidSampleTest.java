@@ -26,8 +26,8 @@ public class AndroidSampleTest {
         //get an iOS device
         dc.setCapability("deviceQuery", "@os='android'");
         //launch the app
-        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
-        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
+        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "<BUNDLE_ID>");
+        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "<ACTIVITY>");
 
 
         driver = new AndroidDriver(new URL("https://cloud.experitest.com:443/wd/hub"), dc);
