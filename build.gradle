@@ -2,13 +2,20 @@ group 'java-appium-sample'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
 
 sourceCompatibility = 1.8
 
 repositories {
+
+    maven { url "https://cloud.experitest.com/repo" }
+    maven { url "http://repo.maven.apache.org/maven2" }
     mavenCentral()
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'com.experitest', name: 'appium', version:'4.1.2'
+
 }
