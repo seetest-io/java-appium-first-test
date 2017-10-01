@@ -5,7 +5,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -15,7 +14,6 @@ public class AndroidSampleTest {
     DesiredCapabilities dc = new DesiredCapabilities();
     String userName = "<YOUR_USER_NAME>";
     String accessKey = "<ACCESS_KEY>";
-
 
     @Before
     public void setUp() throws MalformedURLException {
@@ -28,8 +26,6 @@ public class AndroidSampleTest {
         //launch the app
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "<BUNDLE_ID>");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "<ACTIVITY>");
-
-
         driver = new AndroidDriver(new URL("https://cloud.experitest.com:443/wd/hub"), dc);
     }
 
@@ -38,7 +34,6 @@ public class AndroidSampleTest {
 
         //Write your test case here
     }
-
 
     @After
     public void tearDown(){

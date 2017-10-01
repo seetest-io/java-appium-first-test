@@ -15,7 +15,6 @@ public class iOSSampleTest{
     String userName = "<YOUR_USER_NAME>";
     String accessKey = "<ACCESS_KEY>";
 
-
     @Before
     public void setUp() throws MalformedURLException {
         dc.setCapability("username", userName);
@@ -26,7 +25,6 @@ public class iOSSampleTest{
         dc.setCapability("deviceQuery", "@os='ios'");
         //launch the app
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "<BUNDLE_ID>");
-
         driver = new IOSDriver(new URL("https://cloud.experitest.com:443/wd/hub"), dc);
     }
 
@@ -35,7 +33,6 @@ public class iOSSampleTest{
 
         //Write your test case here
     }
-
 
     @After
     public void tearDown(){
