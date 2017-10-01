@@ -21,7 +21,7 @@ public class AndroidSampleTest {
         dc.setCapability("projectName", projectName);
         //install the app on the device
         dc.setCapability(MobileCapabilityType.APP, "cloud:<BUNDLE_ID>");
-        //get an iOS device
+        //get an Android device
         dc.setCapability("platformName", "Android");
         //launch the app
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "<BUNDLE_ID>");
