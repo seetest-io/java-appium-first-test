@@ -1,14 +1,10 @@
-//package <set your test package>;
 import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.apache.http.client.methods.HttpGet;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import javax.net.ssl.HttpsURLConnection;
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
