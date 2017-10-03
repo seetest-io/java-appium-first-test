@@ -14,13 +14,11 @@ public class AndroidSampleTest {
     DesiredCapabilities dc = new DesiredCapabilities();
     String testName = "<TEST_NAME>";
     String accessKey = "<ACCESS_KEY>";
-    String projectName = "<PROJECT_NAME>";
 
     @Before
     public void setUp() throws MalformedURLException {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey", accessKey);
-        dc.setCapability("projectName", projectName);
         //install the app on the device
         dc.setCapability(MobileCapabilityType.APP, "cloud:<BUNDLE_ID>");
         //get an Android device
