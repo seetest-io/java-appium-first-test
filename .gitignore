@@ -1,8 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
-/.gradle/
 /.idea/
 /gradle/
 .gitignore
 src/main/resources/
 src/test/resources/
 /src/test/java/testMe.java
+/src/test/java/testMeAndrd.java
+out/
+src/test/java/testMeAndrd.java
