@@ -1,4 +1,6 @@
 language: java
-before_script:
+before_install:
  - chmod +x gradlew
-gradle build
+
+script:
+  - ./gradlew clean build -i --continue
