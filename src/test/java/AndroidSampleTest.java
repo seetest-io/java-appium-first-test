@@ -13,7 +13,7 @@ public class AndroidSampleTest {
     AndroidDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     String testName = "<TEST_NAME>";
-    String accessKey = "%accessKey%";
+    String accessKey = System.getenv("accessKey");
 
     @Before
     public void setUp() throws MalformedURLException {
