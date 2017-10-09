@@ -19,7 +19,6 @@ public class iOSSampleTest{
 
     @Before
     public void setUp() throws MalformedURLException {
-        System.out.println(accessKey);
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey", accessKey);
         //install the app on the device
