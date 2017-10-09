@@ -14,7 +14,7 @@ public class iOSSampleTest{
 
     IOSDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
-    String testName = "Testing iOS App";
+    String testName = "Testing iOS App with Java";
     String accessKey = System.getenv("accessKey");
 
     @Before

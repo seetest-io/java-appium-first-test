@@ -15,7 +15,7 @@ public class AndroidSampleTest {
 
     AndroidDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
-    String testName = "Testing Android App";
+    String testName = "Testing Android App with Java";
     String accessKey = System.getenv("accessKey");
 
     @Before
