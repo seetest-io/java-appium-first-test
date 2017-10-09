@@ -17,6 +17,7 @@ public class AndroidSampleTest {
 
     @Before
     public void setUp() throws MalformedURLException {
+        System.out.println("This is my access --------------------------------- " + accessKey);
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey", accessKey);
         //install the app on the device
