@@ -1,4 +1,5 @@
 language: java
+- env
 before_install:
  - chmod +x gradlew
 
