@@ -13,7 +13,7 @@ public class AndroidSampleTest {
 
     AndroidDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
-    String testName = "<TEST_NAME>";
+    String testName = "Testing Android App";
     String accessKey = System.getenv("accessKey");
 
     @Before
