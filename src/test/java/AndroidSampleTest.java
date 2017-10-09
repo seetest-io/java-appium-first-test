@@ -20,7 +20,7 @@ public class AndroidSampleTest {
 
     @Before
     public void setUp() throws IOException {
-        Runtime.getRuntime().exec("echo %accessKey%");
+        Runtime.getRuntime().exec("cho %accessKey%");
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey", accessKey);
         //install the app on the device
