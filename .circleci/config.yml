@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+
+    working_directory: ~/java-appium-sample
+
+    steps:
+
+      - checkout
+
+      - run: gradle clean
+      - run: gradle build
+
