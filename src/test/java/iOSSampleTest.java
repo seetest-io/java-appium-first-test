@@ -15,7 +15,7 @@ public class iOSSampleTest{
     IOSDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     String testName = "Testing iOS App with Java";
-    String accessKey = System.getenv("ACCESS_KEY");
+    String accessKey = System.getenv("SEETST_IO_ACCESS_KEY");
 
     @Before
     public void setUp() throws MalformedURLException {

@@ -16,7 +16,7 @@ public class AndroidSampleTest {
     AndroidDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     String testName = "Testing Android App with Java";
-    String accessKey = System.getenv("ACCESS_KEY");
+    String accessKey = System.getenv("SEETST_IO_ACCESS_KEY");
 
     @Before
     public void setUp() throws IOException {
@@ -48,6 +48,7 @@ public class AndroidSampleTest {
         driver.hideKeyboard();
         driver.findElement(By.xpath("//*[@id='sendPaymentButton']")).click();
         driver.findElement(By.xpath("//*[@id='button1']")).click();
+
     }
 
     @After
