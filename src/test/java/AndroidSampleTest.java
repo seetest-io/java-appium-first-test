@@ -16,7 +16,7 @@ public class AndroidSampleTest {
     AndroidDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     String testName = "Testing Android App with Java";
-    String accessKey = System.getenv("SEETST_IO_ACCESS_KEY");
+    String accessKey = System.getenv("SEETEST_IO_ACCESS_KEY");
 
     @Before
     public void setUp() throws IOException {
