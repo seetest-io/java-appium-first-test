@@ -15,14 +15,14 @@ public class iOSSampleTest{
     IOSDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     String testName = "Testing iOS App with Java";
-    String accessKey = System.getenv("SEETST_IO_ACCESS_KEY");
+    String accessKey = System.getenv("SEETEST_IO_ACCESS_KEY");
 
     @Before
     public void setUp() throws MalformedURLException {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey", accessKey);
         //install the app on the device
-        dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
+        dc.setCapability(MobileCapabilityType.APP, "http://d242m5chux1g9j.cloudfront.net/eribank.ipa");
         //get an iOS device
         dc.setCapability("platformName", "iOS");
         //launch the app

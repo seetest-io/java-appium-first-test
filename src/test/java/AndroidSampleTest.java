@@ -23,7 +23,7 @@ public class AndroidSampleTest {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey", accessKey);
         //install the app on the device
-        dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
+        dc.setCapability(MobileCapabilityType.APP, "http://d242m5chux1g9j.cloudfront.net/eribank.apk");
         //get an Android device
         dc.setCapability("platformName", "Android");
         //launch the app
