@@ -13,7 +13,7 @@
 We've included .yml configuration files in this project in order to allow you to run these tests in a CI/CD environment
 See below for each service that we included:
 ### [Using seetest.io with Travis CI](https://docs.seetest.io/display/SEET/Using+seetest.io+with+Travis+CI)
-### [Using seetest.io with CircleCI}(https://docs.seetest.io/display/SEET/Using+seetest.io+with+circelci)
+### [Using seetest.io with CircleCI](https://docs.seetest.io/display/SEET/Using+seetest.io+with+circelci)
 ### [Using seetest.io with Bitbucket](https://docs.seetest.io/display/SEET/Using+seetest.io+with+Bitbucket)
 ### [Using seetest.io with Jenkins](https://docs.seetest.io/display/SEET/Using+seetest.io+with+Jenkins)
 
