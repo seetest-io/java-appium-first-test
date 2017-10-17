@@ -24,7 +24,7 @@ public class iOSAppTest {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey", accessKey);
         //install the app on the device
-        dc.setCapability(MobileCapabilityType.APP, "http://d242m5chux1g9j.cloudfront.net/eribank.ipa");
+        dc.setCapability(MobileCapabilityType.APP, "http://d242m5chux1g9j.cloudfront.net/EriBank.ipa");
         //get an iOS device
         dc.setCapability("platformName", "iOS");
         //launch the app
