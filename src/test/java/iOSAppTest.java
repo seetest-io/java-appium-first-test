@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class iOSSampleTest{
+public class iOSAppTest {
 
     IOSDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();

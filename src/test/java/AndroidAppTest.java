@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class AndroidSampleTest {
+public class AndroidAppTest {
 
     AndroidDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
