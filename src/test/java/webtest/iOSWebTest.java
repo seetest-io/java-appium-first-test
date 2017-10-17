@@ -17,10 +17,12 @@ public class iOSWebTest {
     IOSDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     String testName = "Testing Website on iOS Safari with Java";
-    String accessKey = System.getenv("SEETEST_IO_ACCESS_KEY");
+    //String accessKey = System.getenv("SEETEST_IO_ACCESS_KEY");
+    String accessKey = "eyJ4cC51IjoxNjUwLCJ4cC5wIjoxNDM1LCJ4cC5tIjoiTVRRNU5UQXhOelV3T0RreE1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4MTY0MzI4MDcsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.JBVpm1JBc8AEHSJm3nY8qv-7Orx0MfSN6D9BsxmfcSA";
 
     @Before
     public void setUp() throws MalformedURLException {
+        dc.setCapability("testName", testName);
         dc.setCapability("accessKey",accessKey);
         dc.setCapability(MobileCapabilityType.BROWSER_NAME, "safari");
         driver = new IOSDriver(new URL("https://cloud.experitest.com:443/wd/hub"),dc);
