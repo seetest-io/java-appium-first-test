@@ -32,9 +32,21 @@ public class iOSWebTest {
 
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
-        driver.findElement(By.xpath("//*[@name='q']")).sendKeys("mobile automation testing");
-        driver.findElement(By.xpath("//*[@name='btnG']")).click();
-        driver.wait(5000);
+
+        if(!driver.findElements(By.xpath("//*[@id='lst-ib']")).isEmpty()){
+
+            driver.findElement(By.xpath("//*[@id='lst-ib']")).sendKeys("mobile automation testing");
+        }
+        else {
+            driver.findElement(By.xpath("//*[@name='q']")).sendKeys("mobile automation testing");
+        }
+        if(!driver.findElements(By.xpath("//*[@name='btnG']")).isEmpty())
+        {
+            driver.findElement(By.xpath("//*[@name='btnG']")).click();
+        }
+        else{
+            driver.findElement(By.xpath("//*[@id='tsbb']")).click();
+        }
     }
 
     @After
