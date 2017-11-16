@@ -11,3 +11,7 @@ src/test/java/testMeAndrd.java
 /src/test/java/testMeiOS.java
 /src/test/java/testMeAndroid.java
 /src/test/java/AppiumTestSample.java
+.idea/
+src/test/java/AppiumTestSample.java
+src/test/java/testMeAndroid.java
+src/test/java/testMeiOS.java
