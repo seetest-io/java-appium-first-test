@@ -48,8 +48,6 @@ public class AndroidWebTest {
         else{
             driver.findElement(By.xpath("//*[@text='Google Search']")).click();
         }
-
-
     }
 
     @After
