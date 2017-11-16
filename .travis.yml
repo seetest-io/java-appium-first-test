@@ -2,5 +2,8 @@ language: java
 before_install:
  - chmod +x gradlew
 
+notifications:
+  slack: $SLACK_CHANNEL
+
 script:
   - ./gradlew clean build -i --continue

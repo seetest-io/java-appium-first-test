@@ -3,7 +3,6 @@ package apptest;
 import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.boon.core.Sys;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,6 +28,7 @@ public class iOSAppTest {
         dc.setCapability("platformName", "iOS");
         //launch the app
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
+
         driver = new IOSDriver(new URL("https://cloud.experitest.com:443/wd/hub"), dc);
     }
 
