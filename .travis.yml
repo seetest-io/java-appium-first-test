@@ -1,9 +1,8 @@
 language: java
 before_install:
- - chmod +x gradlew
-
+- chmod +x gradlew
 notifications:
-  slack: $SLACK_CHANNEL
-
+  slack:
+    secure: 2x65Y1kdvsNGYtjMc9XvR1ATmDl6ZC2oUy8Neik09IqAVYrqEZHPAuS86MXv9VpGdwGZUFBpaffBEfExnn7rWQwa6+4OLMJ91xH6JCA9fqO+rOyBrC22oVRLz3XFEw4gxxdRzXeAko3w4ZNIR2DI5PFC8FYBzSC1W/J4LDSmk9YVZ/dXhpLGiT/Q2paQBw8BTO9dIJxRDFfj3qEwGSrOuEWsy3B5T9g9vRNNTMT7m2dhG+sWWwT9U3vm8vPOvhv0tLRx+hVonRIxL1s/I64WY2UsGVmihVSh/0vuICOqI9D5SWXGhCiAvOYKfTFmVZuiBsbu52ppDSdGm/nqgR5clHn4j5bXn4SR3JWkeOusPzkxwbw4ha/vYbzUQ19wklsn10Sl/iDqGQ1mq/oxJGWwDopiIoTv7Rcv/EENQmMxG/F3TlLDn9SzJWBvjSv3w9Hcyn/0fyE661UtgTmlV/+hrQyj/uIfF0CmzrUpVxUmQWC9rj+jeu1FvytG/Nh6KT32nC2rO5ITV3HqlGH0ftymOH0iV05LN1iKqcK5yVM5eu1Ytd3UAd4qrsAl8+zydFQOhxKb05CQvnH9029Pls/YC+ULz0apmRv9IlYk4XUQCXl4wEJvNnm9tqTYzW9iIo7ijwlvf5IimgwMT6A6y9t0Z27BXQLlzgQ1eCM+6aG/zyw=
 script:
-  - ./gradlew clean build -i --continue
+- "./gradlew clean build -i --continue"
