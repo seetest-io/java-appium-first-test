@@ -31,7 +31,7 @@ public class AndroidAppTest {
         //launch the app
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
-        driver = new AndroidDriver(new URL("https://cloud.experitest.com:443/wd/hub"), dc);
+        driver = new AndroidDriver(new URL("https://stage.experitest.com:443/wd/hub"), dc);
     }
 
     @Test
