@@ -29,7 +29,7 @@ public class iOSAppTest {
         //launch the app
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 
-        driver = new IOSDriver(new URL("https://cloud.experitest.com:443/wd/hub"), dc);
+        driver = new IOSDriver(new URL("https://stage.experitest.com:443/wd/hub"), dc);
     }
 
     @Test
