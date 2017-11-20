@@ -46,7 +46,7 @@ public class AndroidWebTest {
             driver.findElement(By.xpath("//*[@name='btnG']")).click();
         }
         else{
-            driver.findElement(By.xpath("//*[@text='Google Search']")).click();
+            driver.findElement(By.xpath("//*[@id='tsbb']")).click();
         }
 
     }
