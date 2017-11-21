@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class AndroidWebTest {
@@ -21,12 +22,10 @@ public class AndroidWebTest {
     String accessKey = System.getenv("SEETEST_IO_ACCESS_KEY");
 
     @Before
-    public void setUp() throws IOException {
-        chromeOptions = new ChromeOptions();
+    public void setUp() throws MalformedURLException {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey",accessKey);
         dc.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
-        dc.setCapability("chromeOptions", chromeOptions);
         driver = new AndroidDriver(new URL("https://stage.experitest.com:443/wd/hub"),dc);;
     }
 
