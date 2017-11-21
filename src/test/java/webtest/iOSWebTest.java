@@ -29,7 +29,6 @@ public class iOSWebTest {
 
     @Test
     public void testYourSiteiOS() throws InterruptedException {
-
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
         driver.findElement(By.xpath("//*[@name='q']")).sendKeys("mobile automation testing");

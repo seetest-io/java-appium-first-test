@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class AndroidWebTest {
@@ -20,7 +21,7 @@ public class AndroidWebTest {
     String accessKey = System.getenv("SEETEST_IO_ACCESS_KEY");
 
     @Before
-    public void setUp() throws IOException {
+    public void setUp() throws MalformedURLException {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey",accessKey);
         dc.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
@@ -29,9 +30,6 @@ public class AndroidWebTest {
 
     @Test
     public void testYourAndroidApp() throws InterruptedException {
-        if(driver.isLocked()){
-            driver.unlockDevice();
-        }
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
         driver.findElement(By.xpath("//*[@name='q']")).sendKeys("mobile automation testing");
