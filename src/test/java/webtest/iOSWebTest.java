@@ -34,12 +34,16 @@ public class iOSWebTest {
         System.out.println(driver.getTitle());
         driver.findElement(By.xpath("//*[@name='q']")).sendKeys("mobile automation testing");
         driver.findElement(By.xpath("//*[@name='btnG']")).click();
-
     }
 
     @After
-    public void tearDown(){
-        driver.quit();
+    public void tearDown() {
+        if (driver != null)
+        {
+            driver.quit();
+            System.out.println("Report URL : " + driver.getCapabilities().getCapability("reportUrl"));
+
+        }
     }
 
 }

@@ -45,11 +45,17 @@ public class iOSAppTest {
         driver.findElement(By.xpath("//*[@text='Country']")).sendKeys("US");
         driver.findElement(By.xpath("//*[@text='sendPaymentButton']")).click();
         driver.findElement(By.xpath("//*[@text='Yes']")).click();
+
     }
 
     @After
-    public void tearDown(){
-        driver.quit();
+    public void tearDown() {
+        if (driver != null)
+        {
+            driver.quit();
+            System.out.println("Report URL : " + driver.getCapabilities().getCapability("reportUrl"));
+
+        }
     }
 
 }

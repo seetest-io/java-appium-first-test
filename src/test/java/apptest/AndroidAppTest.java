@@ -36,9 +36,6 @@ public class AndroidAppTest {
 
     @Test
     public void testYourAndroidApp() {
-        if(driver.isLocked()){
-            driver.unlockDevice();
-        }
         driver.findElement(By.xpath("//*[@id='usernameTextField']")).sendKeys("company");
         driver.findElement(By.xpath("//*[@id='passwordTextField']")).sendKeys("company");
         driver.findElement(By.xpath("//*[@id='loginButton']")).click();
@@ -51,11 +48,17 @@ public class AndroidAppTest {
         driver.findElement(By.xpath("//*[@id='sendPaymentButton']")).click();
         driver.findElement(By.xpath("//*[@id='button1']")).click();
 
+
     }
 
     @After
-    public void tearDown(){
-        driver.quit();
+    public void tearDown() {
+        if (driver != null)
+        {
+            driver.quit();
+            System.out.println("Report URL : " + driver.getCapabilities().getCapability("reportUrl"));
+
+        }
     }
 
 }
