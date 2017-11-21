@@ -7,13 +7,14 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;
 import java.net.URL;
 
 public class AndroidWebTest {
-
+    ChromeOptions chromeOptions;
     AndroidDriver driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     String testName = "Testing Website on Android Chrome with Java";
@@ -21,33 +22,20 @@ public class AndroidWebTest {
 
     @Before
     public void setUp() throws IOException {
+        chromeOptions = new ChromeOptions();
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey",accessKey);
         dc.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
+        dc.setCapability("chromeOptions", chromeOptions);
         driver = new AndroidDriver(new URL("https://stage.experitest.com:443/wd/hub"),dc);;
     }
 
     @Test
     public void testYourAndroidApp() throws InterruptedException {
-        if(driver.isLocked()){
-            driver.unlockDevice();
-        }
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
-        if(!driver.findElements(By.xpath("//*[@id='lst-ib']")).isEmpty()){
-
-            driver.findElement(By.xpath("//*[@id='lst-ib']")).sendKeys("mobile automation testing");
-        }
-        else {
-            driver.findElement(By.xpath("//*[@name='q']")).sendKeys("mobile automation testing");
-        }
-        if(!driver.findElements(By.xpath("//*[@name='btnG']")).isEmpty())
-        {
-            driver.findElement(By.xpath("//*[@name='btnG']")).click();
-        }
-        else{
-            driver.findElement(By.xpath("//*[@id='tsbb']")).click();
-        }
+        driver.findElement(By.xpath("//*[@name='q']")).sendKeys("mobile automation testing");
+        driver.findElement(By.xpath("//*[@name='btnG']")).click();
     }
 
     @After
