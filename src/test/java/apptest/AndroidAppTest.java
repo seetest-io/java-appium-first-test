@@ -54,8 +54,12 @@ public class AndroidAppTest {
     }
 
     @After
-    public void tearDown(){
-        driver.quit();
+    public void tearDown() {
+        if (driver != null)
+        {
+            driver.quit();
+            System.out.println("Report URL : " + driver.getCapabilities().getCapability("reportUrl"));
+        }
     }
 
 }
