@@ -24,7 +24,7 @@ public class iOSWebTest {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey",accessKey);
         dc.setCapability(MobileCapabilityType.BROWSER_NAME, "safari");
-        driver = new IOSDriver(new URL("https://stage.experitest.com:443/wd/hub"),dc);
+        driver = new IOSDriver(new URL("https://beta.seetest.io:443/wd/hub"),dc);
     }
 
     @Test

@@ -24,8 +24,8 @@ public class AndroidWebTest {
     public void setUp() throws MalformedURLException {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey",accessKey);
-        dc.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
-        driver = new AndroidDriver(new URL("https://stage.experitest.com:443/wd/hub"),dc);;
+        dc.setCapability(MobileCapabilityType.BROWSER_NAME, "chromium");
+        driver = new AndroidDriver(new URL("https://beta.seetest.io:443/wd/hub"),dc);;
     }
 
     @Test
