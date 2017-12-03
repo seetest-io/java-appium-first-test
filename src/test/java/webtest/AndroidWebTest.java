@@ -34,7 +34,7 @@ public class AndroidWebTest {
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
         driver.findElement(By.xpath("//*[@name='q']")).sendKeys("mobile automation testing");
-        driver.findElement(By.xpath("//*[@name='btnG']")).click();
+        driver.findElement(By.xpath("//*[@aria-label='Google Search']")).click();
     }
 
     @After
