@@ -31,10 +31,11 @@ public class AndroidWebTest {
 
     @Test
     public void testYourAndroidApp() throws InterruptedException {
-        driver.get("https://google.com");
+        driver.get("https://amazon.com");
         System.out.println(driver.getTitle());
-        driver.findElement(By.xpath("//*[@name='q']")).sendKeys("mobile automation testing");
-        driver.findElement(By.xpath("//*[@aria-label='Google Search']")).click();
+        driver.findElement(By.xpath("//*[@name='k']")).sendKeys("mobile automation testing");
+        driver.findElement(By.xpath("//*[@value='Go']")).click();
+        System.out.println(driver.getPageSource());
     }
 
     @After
