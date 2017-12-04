@@ -32,7 +32,7 @@ public class iOSWebTest {
 
         driver.get("https://amazon.com");
         System.out.println(driver.getTitle());
-        driver.findElement(By.xpath("//*[@name='k']")).sendKeys("mobile automation testing");
+        driver.findElement(By.xpath("//*[@name='k']")).sendKeys("iPhone");
         driver.findElement(By.xpath("//*[@value='Go']")).click();
         System.out.println(driver.getPageSource());
 
