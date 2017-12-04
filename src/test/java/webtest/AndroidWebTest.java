@@ -33,7 +33,7 @@ public class AndroidWebTest {
     public void testYourAndroidApp() throws InterruptedException {
         driver.get("https://amazon.com");
         System.out.println(driver.getTitle());
-        if( driver.getCapabilities().getCapability("reportUrl") == "TABLET"){
+        if( driver.getCapabilities().getCapability("reportUrl").equals("TABLET")){
 
             driver.findElement(By.xpath("//*[@name='field-keywords']")).sendKeys("iPhone");
             driver.findElement(By.xpath("//*[@text='Go']")).click();
