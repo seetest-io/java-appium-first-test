@@ -31,7 +31,7 @@ public class iOSWebTest {
     public void testYourSiteiOS() throws InterruptedException {
         driver.get("https://amazon.com");
         System.out.println(driver.getTitle());
-        if( driver.getCapabilities().getCapability("reportUrl") == "TABLET"){
+        if( driver.getCapabilities().getCapability("device.category").equals("TABLET")){
 
             driver.findElement(By.xpath("//*[@name='field-keywords']")).sendKeys("iPhone");
             driver.findElement(By.xpath("//*[@text='Go']")).click();
