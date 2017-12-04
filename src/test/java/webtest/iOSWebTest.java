@@ -32,8 +32,15 @@ public class iOSWebTest {
 
         driver.get("https://amazon.com");
         System.out.println(driver.getTitle());
-        driver.findElement(By.xpath("//*[@name='k']")).sendKeys("iPhone");
-        driver.findElement(By.xpath("//*[@value='Go']")).click();
+        if( driver.getCapabilities().getCapability("reportUrl") == "TABLET"){
+
+            driver.findElement(By.xpath("//*[@name='field-keywords']")).sendKeys("iPhone");
+            driver.findElement(By.xpath("//*[@text='Go']")).click();
+        }
+        else{
+            driver.findElement(By.xpath("//*[@name='k']")).sendKeys("iPhone");
+            driver.findElement(By.xpath("//*[@value='Go']")).click();
+        }
     }
 
     @After
