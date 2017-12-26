@@ -26,6 +26,7 @@ public class iOSAppTest {
         dc.setCapability(MobileCapabilityType.APP, "http://d242m5chux1g9j.cloudfront.net/EriBank.ipa");
         //get an iOS device
         dc.setCapability("platformName", "iOS");
+        dc.setCapability("autoDismissAlerts", true);
         //launch the app
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 
