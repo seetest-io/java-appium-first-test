@@ -2,6 +2,7 @@ package webtest;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileBrowserType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.After;
 import org.junit.Before;
@@ -25,8 +26,8 @@ public class AndroidWebTest {
     public void setUp() throws MalformedURLException {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey",accessKey);
-        dc.setCapability(MobileCapabilityType.BROWSER_NAME, "chromium");
-        driver = new AndroidDriver(new URL("https://beta.seetest.io:443/wd/hub"),dc);;
+        dc.setBrowserName(MobileBrowserType.CHROME);
+        driver = new AndroidDriver(new URL("https://beta.seetest.io:443/wd/hub"),dc);
     }
 
     @Test
