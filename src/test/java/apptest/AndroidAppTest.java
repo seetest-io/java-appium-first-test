@@ -8,8 +8,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -21,7 +19,7 @@ public class AndroidAppTest {
     String accessKey = System.getenv("SEETEST_IO_ACCESS_KEY");
 
     @Before
-    public void setUp() throws IOException {
+    public void setUp() throws MalformedURLException {
         dc.setCapability("testName", testName);
         dc.setCapability("accessKey", accessKey);
         //install the app on the device
